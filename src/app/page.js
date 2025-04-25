@@ -5,6 +5,7 @@ import About from "./components/About";
 import Logo from "./components/Logo";
 import WhatIDo from "./components/WhatIDo";
 import Services from "./components/Services";
+import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Logo />
         <WhatIDo />
         <Services />
+        <Contacts />
       </main>
       <Footer />
     </>

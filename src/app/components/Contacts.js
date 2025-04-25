@@ -50,27 +50,27 @@ export default function Contacts() {
           {[
             {
               href: "https://youtube.com/yourchannel",
-              src: "/svg/youtube.svg",
+              src: "img/svg/youtube.svg",
               alt: "YouTube",
             },
             {
               href: "https://facebook.com/yourprofile",
-              src: "/svg/facebook.svg",
+              src: "img/svg/facebook.svg",
               alt: "Facebook",
             },
             {
               href: "https://facebook.com/yourprofile",
-              src: "/svg/linkedin.svg",
+              src: "img/svg/linkedin.svg",
               alt: "LinkedIn",
             },
             {
               href: "https://t.me/yourtelegram",
-              src: "/svg/telegram.svg",
+              src: "img/svg/telegram.svg",
               alt: "Telegram",
             },
             {
               href: "mailto:igor.slabykh@gmail.com",
-              src: "/svg/message.svg",
+              src: "img/svg/message.svg",
               alt: "Email",
             },
           ].map(({ href, src, alt }, i) => (
@@ -80,7 +80,7 @@ export default function Contacts() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Перейти: ${alt}`}
-              className="rounded-md bg-[#aa0f24] px-8 py-2.5 text-sm sm:text-lg/8 text-white shadow-sm hover:bg-[#650007] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 font-sans transition-colors duration-300"
+              class="rounded-full p-1 w-12 h-12 flex items-center justify-center bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25)] hover:bg-[#3470bf]/20 transition hover:ring-[#aa0f24] focus-visible:ring-[#aa0f24] focus-visible:outline-none duration-300"
             >
               <Image src={src} alt={alt} width={32} height={32} />
             </a>

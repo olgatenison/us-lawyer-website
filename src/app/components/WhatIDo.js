@@ -40,7 +40,7 @@ export default function WhatIDo() {
               <div className="rounded-full px-10 py-2 w-fit font-semibold text-sm text-[#3470bf] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mb-10 mx-auto sm:mx-0">
                 Что я делаю?
               </div>
-              <h3 id="what-i-do-heading" className="sr-only">
+              <h3 id="what-i-do-heading">
                 Консультирую, помогаю наладить диалог с адвокатами и избежать
                 ошибок, стоящих времени и денег
               </h3>
