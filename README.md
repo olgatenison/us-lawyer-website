@@ -4,6 +4,15 @@ Comprehensive legal assistance, business consulting, and client support in the U
 
 ---
 
+<p align="center">
+  <img 
+    src="./og-image.jpg" 
+    alt="Project preview" 
+    width="600"
+    style="border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" 
+  />
+</p>
+
 ## 📋 About the Project
 
 This website represents the legal services of Igor Slabykh.  
@@ -30,7 +39,12 @@ The main goals of the project:
 ---
 
 <p align="center">
-  <img src="public/prew.jpg" alt="Project preview" width="600" />
+  <img 
+    src="./prew.jpg" 
+    alt="Project preview" 
+    width="600"
+    style="border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" 
+  />
 </p>
 
 ## ⚡ SEO and Performance
