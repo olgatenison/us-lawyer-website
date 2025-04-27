@@ -29,6 +29,10 @@ The main goals of the project:
 
 ---
 
+<p align="center">
+  <img src="public/prew.jpg" alt="Project preview" width="600" />
+</p>
+
 ## ⚡ SEO and Performance
 
 - Meta titles and descriptions are set for all pages
