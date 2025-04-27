@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ru">
+    <html lang="ru" className="scroll-smooth">
       <body className={`${notoSans.variable} font-sans antialiased`}>
         {children}
       </body>
