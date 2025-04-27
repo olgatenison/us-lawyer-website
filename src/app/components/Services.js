@@ -74,7 +74,7 @@ export default function Services() {
               <div className="w-full">
                 <Image
                   src="/img/hands.webp"
-                  alt="рукопожатие"
+                  alt="Рукопожатие — символ юридического партнёрства в США"
                   width={1280}
                   height={720}
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 640px"
