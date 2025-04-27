@@ -1,16 +1,39 @@
 import Image from "next/image";
 import Form from "./Form";
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
+
+const socialLinks = [
+  {
+    href: "https://youtube.com/yourchannel",
+    src: "/img/svg/youtube.svg",
+    alt: "YouTube",
+  },
+  {
+    href: "https://facebook.com/yourprofile",
+    src: "/img/svg/facebook.svg",
+    alt: "Facebook",
+  },
+  {
+    href: "https://linkedin.com/in/yourprofile",
+    src: "/img/svg/linkedin.svg",
+    alt: "LinkedIn",
+  },
+  {
+    href: "https://t.me/yourtelegram",
+    src: "/img/svg/telegram.svg",
+    alt: "Telegram",
+  },
+  {
+    href: "mailto:igor.slabykh@gmail.com",
+    src: "/img/svg/message.svg",
+    alt: "Email",
+  },
+];
 
 export default function Contacts() {
   return (
-    <section className="relative isolate bg-[#040e17]">
+    <section className="relative isolate bg-[#040e17]" id="contacts">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24  lg:static lg:px-8 ">
+        <div className="relative px-6 pb-20 pt-24 lg:static lg:px-8">
           <div>
             {/* background SVG */}
             <svg
@@ -51,47 +74,23 @@ export default function Contacts() {
               <div
                 className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
                 style={{
-                  clipPath: `polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)`,
+                  clipPath:
+                    "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
                 }}
-              ></div>
+              />
             </div>
 
-            <div className="mx-auto max-w-2xl text-center ">
+            {/* Контент */}
+            <div className="mx-auto max-w-2xl text-center">
               <div className="flex justify-center items-center gap-4 mb-5 flex-wrap">
-                {[
-                  {
-                    href: "https://youtube.com/yourchannel",
-                    src: "img/svg/youtube.svg",
-                    alt: "YouTube",
-                  },
-                  {
-                    href: "https://facebook.com/yourprofile",
-                    src: "img/svg/facebook.svg",
-                    alt: "Facebook",
-                  },
-                  {
-                    href: "https://facebook.com/yourprofile",
-                    src: "img/svg/linkedin.svg",
-                    alt: "LinkedIn",
-                  },
-                  {
-                    href: "https://t.me/yourtelegram",
-                    src: "img/svg/telegram.svg",
-                    alt: "Telegram",
-                  },
-                  {
-                    href: "mailto:igor.slabykh@gmail.com",
-                    src: "img/svg/message.svg",
-                    alt: "Email",
-                  },
-                ].map(({ href, src, alt }, i) => (
+                {socialLinks.map(({ href, src, alt }, i) => (
                   <a
                     key={i}
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Перейти: ${alt}`}
-                    class="rounded-full p-1 w-12 h-12 flex items-center justify-center bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25)] hover:bg-[#3470bf]/20 transition hover:ring-[#aa0f24] focus-visible:ring-[#aa0f24] focus-visible:outline-none duration-300"
+                    className="rounded-full p-1 w-12 h-12 flex items-center justify-center bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25)] hover:bg-[#3470bf]/20 transition hover:ring-[#aa0f24] focus-visible:ring-[#aa0f24] focus-visible:outline-none duration-300"
                   >
                     <Image src={src} alt={alt} width={32} height={32} />
                   </a>
@@ -127,6 +126,7 @@ export default function Contacts() {
           </div>
         </div>
 
+        {/* форма */}
         <Form />
       </div>
     </section>

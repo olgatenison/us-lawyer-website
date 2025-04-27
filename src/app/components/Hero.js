@@ -69,7 +69,7 @@ export default function Hero() {
               </p>
               <div className="mt-10 flex items-center mb-10">
                 <a
-                  href="mailto:igor.slabykh@gmail.com"
+                  href="#contacts"
                   className="rounded-md bg-[#aa0f24] px-8 py-2.5 text-sm sm:text-lg/8 text-white shadow-sm hover:bg-[#650007] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 font-sans transition-colors duration-300"
                   aria-describedby="hero-title"
                 >
