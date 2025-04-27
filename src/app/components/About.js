@@ -10,7 +10,7 @@ export default function About() {
           <div className="flex justify-between lg:flex-row flex-col lg:w-full md:w-3/4 w-full">
             {/* Левая часть */}
             <div className="flex flex-col items-start lg:items-end lg:w-1/2 lg:pr-16 pr-6">
-              <span className="rounded-full px-14 py-2 w-fit font-semibold text-sm text-[#3470bf] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mb-5">
+              <span className="rounded-full px-14 py-2 w-fit font-semibold text-sm text-[#5395ff] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mb-5">
                 Обо мне
               </span>
               <h2

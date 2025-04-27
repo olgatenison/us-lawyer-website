@@ -50,7 +50,7 @@ export default function Services() {
             <div className="flex flex-col max-w-2xl">
               <ol className="flex flex-col sm:flex-row pb-16 pt-4 gap-12">
                 <li>
-                  <span className="rounded-full px-8 py-2 w-fit font-semibold text-sm text-[#3470bf] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mb-5">
+                  <span className="rounded-full px-8 py-2 w-fit font-semibold text-sm text-[#5395ff] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mb-5">
                     Поиск и подбор адвокатов
                   </span>
                   <p className="mt-5 text-base/6 font-thin text-white/80">
@@ -60,7 +60,7 @@ export default function Services() {
                 </li>
 
                 <li>
-                  <span className="rounded-full px-8 py-2 w-fit font-semibold text-sm text-[#3470bf] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mb-5">
+                  <span className="rounded-full px-8 py-2 w-fit font-semibold text-sm text-[#5395ff] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mb-5">
                     Консультации для бизнеса
                   </span>
                   <p className="mt-5 text-base/6 font-thin text-white/80">
@@ -74,10 +74,12 @@ export default function Services() {
               <div className="w-full">
                 <Image
                   src="/img/hands.webp"
-                  alt="Атмосферное изображение"
+                  alt="рукопожатие"
                   width={1280}
                   height={720}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 640px"
                   className="w-full object-cover rounded-2xl shadow-lg ring-1 ring-[#2064bc]/20"
+                  loading="lazy"
                 />
               </div>
             </div>

@@ -105,18 +105,16 @@ export default function Contacts() {
                 партнёрству. Напишите мне — и я постараюсь ответить в ближайшее
                 время.
               </p>
-              <div className="mt-10 mb-10 p-6 text-xl/7 text-pretty font-light text-[#3470bf]">
-                <a
-                  href="mailto:igor.slabykh@gmail.com"
-                  aria-describedby="contacts-description"
-                  className="group"
-                >
+
+              <div className="mt-10  mb-0 lg:mb-10 p-6 text-xl/7 text-pretty font-light text-[#3470bf]">
+                <a href="mailto:igor.slabykh@gmail.com" className="group">
                   <span className="uppercase font-semibold text-[#5395ff]">
                     Написать на почту
                   </span>
-                  <p className="max-w-lg mx-auto mb-7">
-                    Свяжитесь со мной по email для консультаций и партнёрства
+                  <p className="max-w-lg mx-auto mb-7 text-lg text-white/80 font-light">
+                    Свяжитесь со мной для консультаций и партнёрства
                   </p>
+
                   <div className="text-white/80 font-semibold group-hover:text-[#aa0f24] group-focus:text-[#aa0f24] transition-colors duration-300">
                     igor.slabykh@gmail.com
                   </div>

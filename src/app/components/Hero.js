@@ -54,7 +54,7 @@ export default function Hero() {
           {/* text */}
           <div className="w-full lg:w-1/2 lg:px-0 font-sans px-6 sm:px-0">
             <div className="mx-auto flex flex-col items-center text-center md:text-left md:items-start">
-              <div className="rounded-full px-8 py-2 w-fit font-semibold text-sm text-[#3470bf] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mx-2 sm:mx-0">
+              <div className="rounded-full px-8 py-2 w-fit font-semibold text-sm text-[#5395ff] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] mx-2 sm:mx-0">
                 Консультирую по праву, бизнесу и коммуникациям
               </div>
               <h1
@@ -71,7 +71,6 @@ export default function Hero() {
                 <a
                   href="#contacts"
                   className="rounded-md bg-[#aa0f24] px-8 py-2.5 text-sm sm:text-lg/8 text-white shadow-sm hover:bg-[#650007] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 font-sans transition-colors duration-300"
-                  aria-describedby="hero-title"
                 >
                   Получить консультацию
                 </a>
@@ -81,7 +80,7 @@ export default function Hero() {
 
           {/* photo */}
           <div className="w-full lg:w-1/2 relative">
-            <figure className="absolute bottom-3 sm:bottom-10 right-6 lg:-right-12 p-6 rounded-2xl text-sm font-sans w-[270px] text-[#3470bf] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] font-regular">
+            <figure className="absolute bottom-3 sm:bottom-10 right-6 lg:-right-12 p-6 rounded-2xl text-sm font-sans w-[270px] text-[#5395ff] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] font-regular">
               <figcaption className="text-white/80 uppercase font-semibold">
                 Игорь Слабых
               </figcaption>
@@ -90,7 +89,6 @@ export default function Hero() {
                 политической системе США
               </p>
             </figure>
-
             <Image
               className="md:rounded-2xl"
               src="/img/igor.webp"
@@ -98,6 +96,8 @@ export default function Hero() {
               width={600}
               height={800}
               priority
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+              blurDataURL="data:image/webp;base64,UklGRhQAAABXRUJQVlA4TAQAAAAvAAAAFAAAFAAAQUxQSAIAAAABAAgAnQCdASoQABAABUB8JbACdDBpAAD+/veSAAAA="
             />
           </div>
         </div>

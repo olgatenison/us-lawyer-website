@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WhatIDo() {
   return (
     <section
@@ -25,11 +27,20 @@ export default function WhatIDo() {
           <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto z-10">
             <picture>
               <source media="(max-width: 1280px)" srcSet="/img/bd-03.webp" />
-              <img
+              <Image
+                className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl ring-1 ring-[#2064bc]/20"
+                src="/img/bd-02.webp"
+                alt="Атмосферное изображение для секции"
+                width={800}
+                height={600}
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 400px"
+                loading="lazy"
+              />
+              {/* <img
                 className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl ring-1 ring-[#2064bc]/20"
                 src="/img/bd-02.webp"
                 alt=""
-              />
+              /> */}
             </picture>
           </div>
         </div>
