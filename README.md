@@ -5,7 +5,7 @@ Comprehensive legal assistance, business consulting, and client support in the U
 ---
 
 <p align="center">
-  <img src="./og-image.jpg" alt="Project preview" width="600" />
+  <img src="public\og-image.jpg" alt="Project preview" width="600" />
 </p>
 
 ## 📋 About the Project
@@ -34,7 +34,7 @@ The main goals of the project:
 ---
 
 <p align="center">
-  <img src="./prew.jpg" alt="Project preview" width="600" />
+  <img src="public\prew.jpg" alt="Project preview" width="600" />
 </p>
 
 ## ⚡ SEO and Performance
