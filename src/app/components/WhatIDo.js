@@ -36,11 +36,6 @@ export default function WhatIDo() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 400px"
                 loading="lazy"
               />
-              {/* <img
-                className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl ring-1 ring-[#2064bc]/20"
-                src="/img/bd-02.webp"
-                alt=""
-              /> */}
             </picture>
           </div>
         </div>

@@ -89,7 +89,7 @@ export default function Contacts() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Перейти: ${alt}`}
+                    aria-label={`Перейти в: ${alt}`}
                     className="rounded-full p-1 w-12 h-12 flex items-center justify-center bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25)] hover:bg-[#3470bf]/20 transition hover:ring-[#aa0f24] focus-visible:ring-[#aa0f24] focus-visible:outline-none duration-300"
                   >
                     <Image src={src} alt={alt} width={32} height={32} />
