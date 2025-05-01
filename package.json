@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "-": "^0.0.1",
+    "@headlessui/react": "^2.2.2",
     "@heroicons/react": "^2.2.0",
     "autoprefixer": "^10.4.21",
     "heroicons": "^2.2.0",

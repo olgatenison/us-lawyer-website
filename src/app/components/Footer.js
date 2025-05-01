@@ -9,7 +9,7 @@ export default function Footer() {
           href="/privacy"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-white/60 hover:text-[#aa0f24] focus-visible:text-[#aa0f24] transition-colors duration-300"
+          className="font-semibold text-white/60 hover:text-[#aa0f24] focus-visible:outline-1  focus-visible:outline-white p-2 focus-visible:rounded-2xl focus:text-[#aa0f24]  transition-colors duration-300"
           aria-label="Открыть политику конфиденциальности в новой вкладке"
         >
           Политика&nbsp;Kонфиденциальности

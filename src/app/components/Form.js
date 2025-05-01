@@ -36,6 +36,63 @@ export default function Form() {
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.target);
+
+  //   const fields = {
+  //     firstName: formData.get("first-name") || "",
+  //     lastName: formData.get("last-name") || "",
+  //     email: formData.get("email") || "",
+  //     phoneNumber: formData.get("phone-number") || "",
+  //     message: formData.get("message") || "",
+  //   };
+
+  //   // Проверка на ошибки в форме
+  //   const newErrors = {};
+  //   for (const [name, value] of Object.entries(fields)) {
+  //     const error = validateField(name, value);
+  //     if (error) {
+  //       newErrors[name] = error;
+  //     }
+  //   }
+
+  //   if (Object.keys(newErrors).length > 0) {
+  //     setErrors(newErrors);
+  //     toast.error("Пожалуйста, заполните все обязательные поля.");
+  //     return;
+  //   }
+
+  //   setErrors({});
+  //   setIsLoading(true);
+
+  //   try {
+  //     // Используем переменную окружения для ID формы
+  //     const formUrl = `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID}`;
+
+  //     const res = await fetch(formUrl, {
+  //       method: "POST",
+  //       body: formData,
+  //     });
+
+  //     // Проверка ответа от Formspree
+  //     if (res.ok) {
+  //       // Сообщение об успехе
+  //       toast.success("Ваше сообщение успешно отправлено!");
+  //       e.target.reset(); // Сбросить форму
+  //     } else {
+  //       // Получаем сообщение об ошибке от Formspree
+  //       const errorMessage = await res.text(); // Получаем подробное сообщение
+  //       console.error("Ошибка при отправке:", errorMessage);
+  //       toast.error("Произошла ошибка при отправке. Попробуйте ещё раз.");
+  //     }
+  //   } catch (error) {
+  //     console.error("Ошибка сети:", error);
+  //     toast.error("Ошибка сети. Пожалуйста, попробуйте позже.");
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -48,6 +105,7 @@ export default function Form() {
       message: formData.get("message") || "",
     };
 
+    // Проверка на ошибки в форме
     const newErrors = {};
     for (const [name, value] of Object.entries(fields)) {
       const error = validateField(name, value);
@@ -66,22 +124,29 @@ export default function Form() {
     setIsLoading(true);
 
     try {
-      const res = await fetch("/api/contact", {
+      // Используем переменную окружения для ID формы
+      const formUrl = `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID}`;
+
+      console.log(`Отправляем форму на: ${formUrl}`); // Логируем URL
+
+      const res = await fetch(formUrl, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(fields),
+        body: formData,
       });
 
+      console.log("Ответ от Formspree: ", res); // Логируем ответ от сервера
+
+      // Проверка ответа от сервера
       if (res.ok) {
         toast.success("Ваше сообщение успешно отправлено!");
-        e.target.reset();
+        e.target.reset(); // Сбросить форму
       } else {
+        const errorMessage = await res.text(); // Получаем подробное сообщение
+        console.error("Ошибка при отправке:", errorMessage);
         toast.error("Произошла ошибка при отправке. Попробуйте ещё раз.");
       }
     } catch (error) {
-      console.error(error);
+      console.error("Ошибка сети:", error);
       toast.error("Ошибка сети. Пожалуйста, попробуйте позже.");
     } finally {
       setIsLoading(false);
@@ -91,7 +156,9 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="px-6 pb-24  pt-0 lg:pt-20 sm:pb-32 lg:px-8"
+      action={`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID}`}
+      method="POST"
+      className="px-6 pb-24 pt-0 lg:pt-20 sm:pb-32 lg:px-8"
     >
       <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -216,7 +283,7 @@ export default function Form() {
               isLoading
                 ? "bg-gray-400 cursor-not-allowed"
                 : "bg-[#aa0f24] hover:bg-[#650007]"
-            } text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+            } text-white focus-visible:outline-1 focus-visible:outline-offset-1 focus-visible:outline-white`}
           >
             {isLoading ? (
               <div className="flex items-center justify-center gap-2">
@@ -255,7 +322,7 @@ export default function Form() {
             href="/privacy"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-white/60 hover:text-[#aa0f24] focus-visible:text-[#aa0f24] transition-colors duration-300"
+            className="font-semibold text-white/60 hover:text-[#aa0f24] focus-visible:text-[#aa0f24] transition-colors duration-300 focus-visible:outline-1  focus-visible:outline-white p-2 focus-visible:rounded-2xl  "
             aria-label="Открыть политику конфиденциальности в новой вкладке"
           >
             политикой&nbsp;конфиденциальности

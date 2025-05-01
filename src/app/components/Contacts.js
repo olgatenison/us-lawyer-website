@@ -3,22 +3,13 @@ import Form from "./Form";
 
 const socialLinks = [
   {
-    href: "https://youtube.com/yourchannel",
+    href: "https://www.youtube.com/@igorslabykh",
     src: "/img/svg/youtube.svg",
     alt: "YouTube",
   },
+
   {
-    href: "https://facebook.com/yourprofile",
-    src: "/img/svg/facebook.svg",
-    alt: "Facebook",
-  },
-  {
-    href: "https://linkedin.com/in/yourprofile",
-    src: "/img/svg/linkedin.svg",
-    alt: "LinkedIn",
-  },
-  {
-    href: "https://t.me/yourtelegram",
+    href: "https://t.me/uslegalnews",
     src: "/img/svg/telegram.svg",
     alt: "Telegram",
   },
@@ -32,8 +23,8 @@ const socialLinks = [
 export default function Contacts() {
   return (
     <section className="relative isolate bg-[#040e17]" id="contacts">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 lg:static lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 pt-16">
+        <div className="relative px-6 pb-20  lg:static lg:px-8">
           <div>
             {/* background SVG */}
             <svg
@@ -100,30 +91,30 @@ export default function Contacts() {
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 Свяжитесь со мной
               </h2>
-              <p className="mt-20 text-xl/7 text-pretty font-semibold text-white/80">
+              <p className="mt-20 text-xl/7 text-pretty font-semibold text-white/90">
                 Открыт к деловым запросам, консультациям и информационному
                 партнёрству. Напишите мне — и я постараюсь ответить в ближайшее
                 время.
               </p>
+              <div className="mt-10 mb-0 lg:mb-10 p-6 text-xl/7 text-pretty font-light text-[#3470bf] group focus:outline-1 focus:rounded-2xl transition-all">
+                <a href="mailto:igor.slabykh@gmail.com" className="group block">
+                  <div className="p-3">
+                    <span className="uppercase font-semibold text-[#5395ff] inline-block">
+                      Написать на почту
+                    </span>
+                    <p className="max-w-lg mx-auto mb-7 text-lg text-white/80 font-light">
+                      Свяжитесь со мной для консультаций и партнёрства
+                    </p>
 
-              <div className="mt-10  mb-0 lg:mb-10 p-6 text-xl/7 text-pretty font-light text-[#3470bf]">
-                <a href="mailto:igor.slabykh@gmail.com" className="group">
-                  <span className="uppercase font-semibold text-[#5395ff]">
-                    Написать на почту
-                  </span>
-                  <p className="max-w-lg mx-auto mb-7 text-lg text-white/80 font-light">
-                    Свяжитесь со мной для консультаций и партнёрства
-                  </p>
-
-                  <div className="text-white/80 font-semibold group-hover:text-[#aa0f24] group-focus:text-[#aa0f24] transition-colors duration-300">
-                    igor.slabykh@gmail.com
+                    <div className="text-white/90 mt-7 font-semibold group-hover:text-[#aa0f24] group-focus:text-[#aa0f24] transition-colors duration-300">
+                      igor.slabykh@gmail.com
+                    </div>
                   </div>
                 </a>
               </div>
             </div>
           </div>
         </div>
-
         {/* форма */}
         <Form />
       </div>
